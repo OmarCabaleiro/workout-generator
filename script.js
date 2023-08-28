@@ -1,5 +1,5 @@
 const bodyweightArray = ["bodyweight squat", "bodyweight pull", "bodyweight push", "back bend", "forward bend", "bodyweight wild card"];
-const clubbellArray = ["clubbell carry", "clubbell squat", "clubbell overhead", "clubbell later", "clubbell wild card"];
+const clubbellArray = ["clubbell carry", "clubbell squat", "clubbell overhead", "clubbell lateral", "clubbell wild card"];
 const kettlebellArray = ["kettlebell carry", "kettlebell squat", "kettlebell hinge", "kettlebell pull", "kettlebell push", "kettlebell wild card"];
 const dumbbellArray = ["dumbbell carry", "dumbbell squat", "dumbbell hinge", "dumbbell pull", "dumbbell push", "dumbbell wild card"];
 const barbellArray = ["barbell carry", "barbell squat", "barbell hinge", "barbell pull", "barbell push", "barbell wild card"];
@@ -7,6 +7,18 @@ let mainArray = [];
 
 function addBodyweight() {
   mainArray = mainArray.concat(bodyweightArray)
+};
+function addClubbell() {
+  mainArray = mainArray.concat(clubbellArray)
+};
+function addKettlebell() {
+  mainArray = mainArray.concat(kettlebellArray)
+};
+function addDumbbell() {
+  mainArray = mainArray.concat(dumbbellArray)
+};
+function addBarbell() {
+  mainArray = mainArray.concat(barbellArray)
 };
 
 // draw 1 random movement pattern from array
