@@ -12,8 +12,68 @@
     <main>
       <section class="container top">
         <div class="container controls">
+          <input type="button" onclick='selects()' value="Select All"/>  
+          <input type="button" onclick='deSelect()' value="Deselect All"/>
           <div class="container check-boxes">
-            <input type="checkbox" id="bodyweight-box" name="bodyweight" value="bodyweight" onchange="addBodyweight()" checked="false">
+            <input type="checkbox" id="bodyweight-squat" name="chk" value="bodyweight-squat">
+            <label for="bodyweight-squat"> Bodyweight Squat</label>
+            <input type="checkbox" id="bodyweight-push" name="chk" value="bodyweight-push">
+            <label for="bodyweight-push"> Bodyweight Push</label>
+            <input type="checkbox" id="bodyweight-pull" name="chk" value="bodyweight-pull">
+            <label for="bodyweight-pull"> Bodyweight Pull</label>
+            <input type="checkbox" id="back-bend" name="chk" value="back-bend">
+            <label for="back-bend"> Back Bend</label>
+            <input type="checkbox" id="forward-bend" name="chk" value="forward-bend">
+            <label for="forward-bend"> Forward Bend</label>
+            <input type="checkbox" id="bodyweight-wildcard" name="chk" value="bodyweight-wildcard">
+            <label for="bodyweight-wildcard"> Bodyweight Wildcard</label><br>
+            <input type="checkbox" id="dumbbell-carry" name="chk" value="dumbbell-carry">
+            <label for="dumbbell-carry"> Dumbbell Carry</label>
+            <input type="checkbox" id="dumbbell-squat" name="chk" value="dumbbell-squat">
+            <label for="dumbbell-squat"> Dumbbell Squat</label>
+            <input type="checkbox" id="dumbbell-hinge" name="chk" value="dumbbell-hinge">
+            <label for="dumbbell-hinge"> Dumbbell Hinge</label>
+            <input type="checkbox" id="dumbbell-pull" name="chk" value="dumbbell-pull">
+            <label for="dumbbell-pull"> Dumbbell Pull</label>
+            <input type="checkbox" id="dumbbell-push" name="chk" value="dumbbell-push">
+            <label for="dumbbell-push"> Dumbbell Push</label>
+            <input type="checkbox" id="dumbbell-wildcard" name="chk" value="dumbbell-wildcard">
+            <label for="dumbbell-wildcard"> Dumbbell Wildcard</label><br>
+            <input type="checkbox" id="barbell-carry" name="chk" value="barbell-carry">
+            <label for="barbell-carry"> Barbell Carry</label>
+            <input type="checkbox" id="barbell-squat" name="chk" value="barbell-squat">
+            <label for="barbell-squat"> Barbell Squat</label>
+            <input type="checkbox" id="barbell-hinge" name="chk" value="barbell-hinge">
+            <label for="barbell-hinge"> Barbell Hinge</label>
+            <input type="checkbox" id="barbell-pull" name="chk" value="barbell-pull">
+            <label for="barbell-pull"> Barbell Pull</label>
+            <input type="checkbox" id="barbell-push" name="chk" value="barbell-push">
+            <label for="barbell-push"> Barbell Push</label>
+            <input type="checkbox" id="barbell-wildcard" name="chk" value="barbell-wildcard">
+            <label for="barbell-wildcard"> Barbell Wildcard</label><br>
+            <input type="checkbox" id="kettlebell-carry" name="chk" value="kettlebell-carry">
+            <label for="kettlebell-carry"> Kettlebell Carry</label>
+            <input type="checkbox" id="kettlebell-squat" name="chk" value="kettlebell-squat">
+            <label for="kettlebell-squat"> Kettlebell Squat</label>
+            <input type="checkbox" id="kettlebell-hinge" name="chk" value="kettlebell-hinge">
+            <label for="kettlebell-hinge"> Kettlebell Hinge</label>
+            <input type="checkbox" id="kettlebell-pull" name="chk" value="kettlebell-pull">
+            <label for="kettlebell-pull"> Kettlebell Pull</label>
+            <input type="checkbox" id="kettlebell-push" name="chk" value="kettlebell-push">
+            <label for="kettlebell-push"> Kettlebell Push</label>
+            <input type="checkbox" id="kettlebell-wildcard" name="chk" value="kettlebell-wildcard">
+            <label for="kettlebell-wildcard"> Kettlebell Wildcard</label><br>
+            <input type="checkbox" id="clubbell-carry" name="chk" value="clubbell-carry">
+            <label for="clubbell-carry"> Clubbell Carry</label>
+            <input type="checkbox" id="clubbell-squat" name="chk" value="clubbell-squat">
+            <label for="clubbell-squat"> Clubbell Squat</label>
+            <input type="checkbox" id="clubbell-lateral" name="chk" value="clubbell-lateral">
+            <label for="clubbell-lateral"> Clubbell Lateral</label>
+            <input type="checkbox" id="clubbell-overhead" name="chk" value="clubbell-overhead">
+            <label for="clubbell-overhead"> Clubbell Overhead</label>
+            <input type="checkbox" id="clubbell-wildcard" name="chk" value="clubbell-wildcard">
+            <label for="clubbell-wildcard"> Clubbell Wildcard</label><br>
+            <!-- <input type="checkbox" id="bodyweight-box" name="bodyweight" value="bodyweight" onchange="addBodyweight()" checked="false">
             <label for="bodyweight"> Bodyweight</label>
             <input type="checkbox" id="clubbell-box" name="clubbell" value="clubbell" onchange="addClubbell()" checked="false">
             <label for="clubbell"> Clubbell</label>
@@ -22,7 +82,7 @@
             <input type="checkbox" id="dumbbell-box" name="dumbbell" value="dumbbell" onchange="addDumbbell()" checked="false">
             <label for="dumbbell"> Dumbbell</label>
             <input type="checkbox" id="barbell-box" name="barbell" value="barbell" onchange="addBarbell()" checked="false">
-            <label for="barbell"> Barbell</label>
+            <label for="barbell"> Barbell</label> -->
           </div>
           <div class="container buttons">
             <button id="OneExercise" onclick="draw1()">1 Exercise</button>

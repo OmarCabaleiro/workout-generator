@@ -1,11 +1,11 @@
-const bodyweightArray = ["bodyweight squat", "bodyweight pull", "bodyweight push", "back bend", "forward bend", "bodyweight wild card"];
+/*const bodyweightArray = ["bodyweight squat", "bodyweight pull", "bodyweight push", "back bend", "forward bend", "bodyweight wild card"];
 const clubbellArray = ["clubbell carry", "clubbell squat", "clubbell overhead", "clubbell lateral", "clubbell wild card"];
 const kettlebellArray = ["kettlebell carry", "kettlebell squat", "kettlebell hinge", "kettlebell pull", "kettlebell push", "kettlebell wild card"];
 const dumbbellArray = ["dumbbell carry", "dumbbell squat", "dumbbell hinge", "dumbbell pull", "dumbbell push", "dumbbell wild card"];
-const barbellArray = ["barbell carry", "barbell squat", "barbell hinge", "barbell pull", "barbell push", "barbell wild card"];
+const barbellArray = ["barbell carry", "barbell squat", "barbell hinge", "barbell pull", "barbell push", "barbell wild card"];*/
 let mainArray = [];
 
-function addBodyweight() {
+/*function addBodyweight() {
   mainArray = mainArray.concat(bodyweightArray)
 };
 function addClubbell() {
@@ -24,7 +24,34 @@ function addBarbell() {
 // draw 1 random movement pattern from array
 function draw1() {  
   output.innerHTML = mainArray[Math.floor(Math.random() * mainArray.length)];
+};*/
+
+// draw 1 random movement pattern from array
+function draw1() {  
+  document.querySelectorAll('[type="checkbox"]').forEach(item => {
+    if (item.checked === true) {
+      mainArray.push(item.value);
+    }
+  })
+  output.innerHTML = mainArray[Math.floor(Math.random() * mainArray.length)];
 };
+
+// select and deselect all buttons
+function selects(){  
+  var ele=document.getElementsByName('chk');  
+  for(var i=0; i<ele.length; i++){  
+      if(ele[i].type=='checkbox')  
+          ele[i].checked=true;  
+  }  
+}  
+function deSelect(){  
+  var ele=document.getElementsByName('chk');  
+  for(var i=0; i<ele.length; i++){  
+      if(ele[i].type=='checkbox')  
+          ele[i].checked=false;  
+        
+  }  
+}
 
 
 
