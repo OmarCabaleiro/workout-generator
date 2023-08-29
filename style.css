@@ -8,6 +8,14 @@
   display: flexbox;
 }
 
+header {
+  margin-left: 20px;
+}
+
+ol {
+  margin-left: 20px;
+}
+
 section {
   margin: 10px;
 }
