@@ -16,6 +16,7 @@
           <li>Deselect all checkboxes</li>
           <li>Refresh page (or close & reopen tab/ browser)</li>
         </ol>
+        (Otherwise, once a draw button is pressed, unchecking won't register.)<br>
         (I'm working on fixing this... maybe.)
       </p>
     </header>
@@ -83,6 +84,18 @@
             <label for="clubbell-overhead"> Clubbell Overhead</label>
             <input type="checkbox" id="clubbell-wildcard" name="chk" value="clubbell-wildcard">
             <label for="clubbell-wildcard"> Clubbell Wildcard</label><br>
+            <input type="checkbox" id="plate-carry" name="chk" value="plate-carry">
+            <label for="plate-carry"> Plate Carry</label>
+            <input type="checkbox" id="plate-squat" name="chk" value="plate-squat">
+            <label for="plate-squat"> Plate Squat</label>
+            <input type="checkbox" id="plate-hinge" name="chk" value="plate-hinge">
+            <label for="plate-hinge"> Plate Hinge</label>
+            <input type="checkbox" id="plate-pull" name="chk" value="plate-pull">
+            <label for="plate-pull"> Plate Pull</label>
+            <input type="checkbox" id="plate-push" name="chk" value="plate-push">
+            <label for="plate-push"> Plate Push</label>
+            <input type="checkbox" id="plate-wildcard" name="chk" value="plate-wildcard">
+            <label for="plate-wildcard"> Plate Wildcard</label><br>
           </div>
           <div class="container buttons">
             <button id="OneExercise" onclick="draw1()">1 Exercise</button>
